@@ -10,6 +10,8 @@
             line-height: 1.6;
             color: #333;
             background: #f8fafc;
+            font-size: 1rem; /* Scales better across devices */
+            width: 100%; /* Adapts to screen size */
         }
 
         /* Header Styles */
@@ -424,6 +426,15 @@
                 gap: 1rem;
                 font-size: 0.9rem;
             }
+        .container {
+            display: flex;
+          flex-wrap: wrap; /* Ensures items stack on smaller screens */
+}
+            img {
+            max-width: 100%; /* Prevents images from overflowing */
+            height: auto;
+}
+
 
             .hero-features {
                 grid-template-columns: 1fr;
@@ -459,4 +470,5 @@
         .fade-in-up {
             animation: fadeInUp 0.6s ease forwards;
         }
+
     </style>
